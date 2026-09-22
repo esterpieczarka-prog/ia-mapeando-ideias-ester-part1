@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de estudos da Ester Fogliatto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Organizador de estudos da Ester Fogliatto</h1>
+        <p>Mapeando os incômodos e soluções para a rotina diária 🎓✨</p>
+    </header>
+
+    <div class="container">
+        <div class="cards-grid">
+
+            <!-- Card 1 -->
+            <div class="card" onclick="openModal('modal1')">
+                <div>
+                    <span class="card-tag tag-alerta">Procrastinação</span>
+                    <h3>Efeito "Deixar para Depois"</h3>
+                    <p>A sensação de sobrecarga faz com que o estudo seja adiado até surgir a ansiedade de última hora.</p>
+                </div>
+                <button class="card-btn">Ver Detalhes &rarr;</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card" onclick="openModal('modal2')">
+                <div>
+                    <span class="card-tag tag-rotina">Organização</span>
+                    <h3>Falta de Priorização</h3>
+                    <p>Perder tempo sem saber por onde começar ou qual matéria é realmente mais urgente no dia.</p>
+                </div>
+                <button class="card-btn">Ver Detalhes &rarr;</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card" onclick="openModal('modal3')">
+                <div>
+                    <span class="card-tag tag-emocional">Insatisfação</span>
+                    <h3>Sensação de Ineficiência</h3>
+                    <p>Passar horas estudando e sentir que não aprendeu ou fixou nada do conteúdo lido.</p>
+                </div>
+                <button class="card-btn">Ver Detalhes &rarr;</button>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card" onclick="openModal('modal4')">
+                <div>
+                    <span class="card-tag tag-rotina">Foco</span>
+                    <h3>Distrações e Notificações</h3>
+                    <p>Interrupções constantes do celular que quebram a linha de raciocínio e o fluxo de estudo.</p>
+                </div>
+                <button class="card-btn">Ver Detalhes &rarr;</button>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card" onclick="openModal('modal5')">
+                <div>
+                    <span class="card-tag tag-alerta">Esgotamento</span>
+                    <h3>Cansaço e Sobrecarga</h3>
+                    <p>Estudar por horas sem pausas adequadas, gerando esgotamento mental e perda de motivação.</p>
+                </div>
+                <button class="card-btn">Ver Detalhes &rarr;</button>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card" onclick="openModal('modal6')">
+                <div>
+                    <span class="card-tag tag-emocional">Materiais</span>
+                    <h3>Anotações Dispersas</h3>
+                    <p>Perder tempo procurando em qual caderno, PDF ou aplicativo ficou gravado o conteúdo importante.</p>
+                </div>
+                <button class="card-btn">Ver Detalhes &rarr;</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ===== EFEITOS MODAIS COM INTEGRAÇÃO ÁS PÁGINAS SECUNDÁRIAS ===== -->
+
+    <!-- Modal 1 -->
+    <div class="modal-overlay" id="modal1">
+        <div class="modal-box">
+            <button class="close-btn" onclick="closeModal('modal1')">&times;</button>
+            <div class="modal-header">
+                <span class="card-tag tag-alerta">Procrastinação</span>
+                <h2>Efeito "Deixar para Depois"</h2>
+            </div>
+            <div class="modal-body">
+                <h4>Incômodo Diário:</h4>
+                <p>Diante de uma tarefa grande, o estudante sente travamento e prefere fazer outras coisas antes de começar.</p>
+                
+                <h4>Consequência:</h4>
+                <p>Estudo corrido na véspera da prova, noites mal dormidas e rendimento abaixo do esperado.</p>
+                
+                <h4>Solução Ideal do App:</h4>
+                <p>Quebrar conteúdos densos em tarefas menores de 15 minutos com incentivos visuais.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="procrastinacao.html" class="btn-acao" style="text-decoration: none; text-align: center;">Aprofundar Assunto &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal-overlay" id="modal2">
+        <div class="modal-box">
+            <button class="close-btn" onclick="closeModal('modal2')">&times;</button>
+            <div class="modal-header">
+                <span class="card-tag tag-rotina">Organização</span>
+                <h2>Falta de Priorização</h2>
+            </div>
+            <div class="modal-body">
+                <h4>Incômodo Diário:</h4>
+                <p>Gastar mais tempo tentando decidir o que estudar do que realmente estudando.</p>
+                
+                <h4>Consequência:</h4>
+                <p>Sensação de desorientação e acúmulo de matérias mais complexas para a última hora.</p>
+                
+                <h4>Solução Ideal do App:</h4>
+                <p>Geração de uma fila diária automática baseada no prazo das entregas e no nível de dificuldade.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="priorizacao.html" class="btn-acao" style="text-decoration: none; text-align: center;">Aprofundar Assunto &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal-overlay" id="modal3">
+        <div class="modal-box">
+            <button class="close-btn" onclick="closeModal('modal3')">&times;</button>
+            <div class="modal-header">
+                <span class="card-tag tag-emocional">Insatisfação</span>
+                <h2>Sensação de Ineficiência</h2>
+            </div>
+            <div class="modal-body">
+                <h4>Incômodo Diário:</h4>
+                <p>Ler várias páginas ou grifar textos, mas esquecer a maior parte no dia seguinte.</p>
+                
+                <h4>Consequência:</h4>
+                <p>Frustração e sentimento de que o tempo dedicado não gerou aprendizado real.</p>
+                
+                <h4>Solução Ideal do App:</h4>
+                <p>Incentivo a métodos ativos de estudo, como resolução de questões e revisões espaçadas.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="ineficiencia.html" class="btn-acao" style="text-decoration: none; text-align: center;">Aprofundar Assunto &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal-overlay" id="modal4">
+        <div class="modal-box">
+            <button class="close-btn" onclick="closeModal('modal4')">&times;</button>
+            <div class="modal-header">
+                <span class="card-tag tag-rotina">Foco</span>
+                <h2>Distrações e Notificações</h2>
+            </div>
+            <div class="modal-body">
+                <h4>Incômodo Diário:</h4>
+                <p>Qualquer notificação no telefone interrompe a concentração e exige tempo para recuperar o foco.</p>
+                
+                <h4>Consequência:</h4>
+                <p>O tempo de estudo rende muito menos e a sessão demora mais do que o necessário.</p>
+                
+                <h4>Solução Ideal do App:</h4>
+                <p>Temporizador de foco (estilo Pomodoro) com metas visuais de imersão.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="distracoes.html" class="btn-acao" style="text-decoration: none; text-align: center;">Aprofundar Assunto &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="modal-overlay" id="modal5">
+        <div class="modal-box">
+            <button class="close-btn" onclick="closeModal('modal5')">&times;</button>
+            <div class="modal-header">
+                <span class="card-tag tag-alerta">Esgotamento</span>
+                <h2>Cansaço e Sobrecarga</h2>
+            </div>
+            <div class="modal-body">
+                <h4>Incômodo Diário:</h4>
+                <p>Tentar estudar sem descanso até atingir o limite da exaustão.</p>
+                
+                <h4>Consequência:</h4>
+                <p>Queda brusca na retenção, dores de cabeça e perda da vontade de manter a rotina.</p>
+                
+                <h4>Solução Ideal do App:</h4>
+                <p>Lembretes inteligentes de pausas ativas e descanso para manter a mente revigorada.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="esgotamento.html" class="btn-acao" style="text-decoration: none; text-align: center;">Aprofundar Assunto &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="modal-overlay" id="modal6">
+        <div class="modal-box">
+            <button class="close-btn" onclick="closeModal('modal6')">&times;</button>
+            <div class="modal-header">
+                <span class="card-tag tag-emocional">Materiais</span>
+                <h2>Anotações Dispersas</h2>
+            </div>
+            <div class="modal-body">
+                <h4>Incômodo Diário:</h4>
+                <p>Conteúdos divididos entre cadernos físicos, blocos de notas do celular e arquivos no computador.</p>
+                
+                <h4>Consequência:</h4>
+                <p>Estresse e perda de tempo procurando materiais antes de poder começar os estudos.</p>
+                
+                <h4>Solução Ideal do App:</h4>
+                <p>Painel central de atalhos organizado por disciplina para vincular resumos e links.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="anotacoes.html" class="btn-acao" style="text-decoration: none; text-align: center;">Aprofundar Assunto &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT PARA ABRIR E FECHAR O MODAL -->
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.add('active');
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+        }
+
+        // Fechar modal clicando fora da caixa de conteúdo
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal-overlay')) {
+                event.target.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+</html>
